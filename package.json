@@ -10,8 +10,9 @@
     "Other"
   ],
   "activationEvents": [
+    "onStartupFinished",
     "onCommand:gitswitch.activateGitSwitch",
-    "onCommand:gitswitch.activateGitSwitch"
+    "onCommand:gitswitch.showGitSwitch"
   ],
   "main": "./out/extension.js",
   "contributes": {
