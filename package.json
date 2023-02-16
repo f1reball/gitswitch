@@ -10,14 +10,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:gitswitch.helloWorld"
+    "onCommand:gitswitch.activateGitSwitch",
+    "onCommand:gitswitch.activateGitSwitch"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "gitswitch.helloWorld",
-        "title": "Hello World"
+        "command": "gitswitch.activateGitSwitch",
+        "title": "Activate Git Switch"
+      },
+      {
+        "command": "gitswitch.showGitSwitch",
+        "title": "Show Git Switch"
       }
     ]
   },
