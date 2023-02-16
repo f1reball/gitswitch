@@ -12,8 +12,8 @@ export function activate(context: vscode.ExtensionContext) {
         vscode.StatusBarAlignment.Left,
         100
       );
-      status.name = "🐱";
-      status.text = "🐱";
+      status.name = "💻";
+      status.text = "💻";
       status.show();
       status.command = "gitswitch.showGitSwitch";
     }
@@ -22,7 +22,9 @@ export function activate(context: vscode.ExtensionContext) {
   disposable = vscode.commands.registerCommand(
     "gitswitch.showGitSwitch",
     async () => {
-      await vscode.window.showInformationMessage("Hellow from the catto");
+      await vscode.window.showInformationMessage(
+        "Connection to codebase goes here from FE"
+      );
     }
   );
   context.subscriptions.push(disposable);
